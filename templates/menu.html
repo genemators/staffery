@@ -1,0 +1,18 @@
+
+ <ul class="nested">
+{% for menu in menu_list.employee_set.all %}
+
+
+
+        {% if menu.employee_set.all|length %}
+            <li><span class="caret">{{ menu.full_name|slice:"0:20" }}</span>
+            <ul>
+                {% include "menu.html" with menu_list=menu %}
+            </ul>
+        {% else %}
+            <li>{{ menu.full_name|slice:"0:20" }}</li>
+        {% endif %}
+
+
+{% endfor %}
+</ul>

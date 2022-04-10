@@ -1,0 +1,6 @@
+{% include  'base.html'%}
+<ul>
+    {% for employee in employees %}
+        <li>{{ employee.full_name|slice:"0:20" }} | {{ employee.position|slice:"0:20" }} | {{ employee.employed_at }} | {{ employee.chief.full_name|slice:"0:20"}}</li>
+    {% endfor %}
+</ul>
