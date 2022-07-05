@@ -6,7 +6,7 @@ authors = ["genemators <itstoolongname@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-Django = "^4.0.3"
+Django = "^4.0.6"
 django-seed = "^0.3.1"
 psycopg2-binary = "^2.9.3"
 pylava = "^0.3.0"
